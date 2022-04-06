@@ -6,29 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
 
 </head>
 
 <body>
-    <header>
+    <header class="navBar">
         <img src="../img/favicon.png" alt="Logo de G2 Fotografía" height="80">
-        <h4>G2 Fotografía</h4>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
+        <h4 class="titleLogo">G2 Fotografía</h4>
+        <nav class="indexLinksUbication1">
+            <ul class="indexLinksUbication2">
+                <li class="indexLinks">
+                    <a href="../index.html" class="indexLinksStyle">Inicio</a>
                 </li>
-                <li>
-                    <a href="gallery.html">Galería</a>
+                <li class="indexLinks">
+                    <a href="gallery.html" class="indexLinksStyle">Galería</a>
                 </li>
-                <li>
-                    <a href="services.html">Servicios</a>
+                <li class="indexLinks">
+                    <a href="services.html" class="indexLinksStyle">Servicios</a>
                 </li>
-                <li>
-                    <a href="about-us.html">Quiénes somos</a>
+                <li class="indexLinks">
+                    <a href="about-us.html" class="indexLinksStyle">Quiénes somos</a>
                 </li>
-                <li>
-                    <a href="contact.html">Contacto</a>
+                <li class="indexLinks">
+                    <a href="contact.html" class="indexLinksStyle">Contacto</a>
                 </li>
             </ul>
         </nav>
@@ -36,51 +37,60 @@
     </header>
 
 
-    <h1>Contacto</h1>
+    <main class="fondo">
+        <h1 class="tituloPrincipal">Contacto</h1>
 
-    <fieldset>
-        <legend>Datos personales</legend>
-        <div>
-            <label for="name">Nombre y apellido:</label>
-            <input type="text" name="" id="name" placeholder="Ingrese su nombre y apellido">
-        </div>
+        <div class="container">
+            <fieldset class="form">
+                <legend>Datos personales</legend>
+                <div>
+                    <label for="name">Nombre y apellido:</label>
+                    <input type="text" name="" id="name" placeholder="Ingrese su nombre y apellido">
+                </div>
+            
+                <div>
+                    <label for="tel">Teléfono:</label>
+                    <input type="tel" name="" id="tel" placeholder="Ingese su teléfono">
+                </div>
+            
+                <div>
+                    <label for="e-mail">Correo electrónico:</label>
+                    <input type="email" name="" id="e-mail" placeholder="Ingrese su e-mail">
+                </div>
+            
+                <div>
+                    <label for="newsletter">Deseo recibir en mi correo un aviso cada vez que se suban nuevas imágenes el sitio web:</label>
+                    <input type="checkbox" name="" id="newsletter">
+                </div>
+        
+        
+            </fieldset>
+        
+            <fieldset class="form">
+                <legend>Dejanos tu mensaje</legend>
+                <textarea name="" id="" cols="60" rows="10" placeholder="Ingrese su mensaje"></textarea>
+            </fieldset>
+        
+            <input type="button" value="Enviar">
     
-        <div>
-            <label for="tel">Teléfono:</label>
-            <input type="tel" name="" id="tel" placeholder="Ingese su teléfono">
-        </div>
-    
-        <div>
-            <label for="e-mail">Correo electrónico:</label>
-            <input type="email" name="" id="e-mail" placeholder="Ingrese su e-mail">
-        </div>
-    
-        <div>
-            <label for="newsletter">Deseo recibir en mi correo un aviso cada vez que se suban nuevas imágenes el sitio web:</label>
-            <input type="checkbox" name="" id="newsletter">
-        </div>
 
-
-    </fieldset>
-
-    <fieldset>
-        <legend>Dejanos tu mensaje</legend>
-        <textarea name="" id="" cols="60" rows="10" placeholder="Ingrese su mensaje"></textarea>
-    </fieldset>
-
-    <input type="button" value="Enviar">
-    
-
-    <footer>
-        <div>
-            <a href="https://www.instagram.com/g2.fotografos/">Visita nuesto Instagram!  <img src="../img/instagram.png" alt="Logo de instagram" height="50"></a>
-        </div>
-
-        <div>
-            <a href="mailto:g2.fotografía@gmail.com">Envianos un correo! <img src="../img/correo.png" alt="Imagén de una carta" height="50"></a>
         </div>
        
+    </main>
+    
 
+    <footer class="socialMediaBar">
+        <div class="socialMediaSeparation">
+            <a href="https://www.instagram.com/g2.fotografos/" class="socialMediaLinks">Visita nuesto Instagram!  <img src="../img/instagram.png" alt="Logo de instagram" height="50"></a>
+        </div>
+
+        <div class="socialMediaSeparation">
+            <a href="mailto:g2.fotografía@gmail.com" class="socialMediaLinks">Envianos un correo! <img src="../img/correo.png" alt="Imagén de una carta" height="50"></a>
+        </div>
+
+        <a href="https://web.whatsapp.com/" class="whatsapp"><img src="../img/whatsapp.png" alt="Logo de whatsapp"></a>
+        
+       
     </footer>
     
 </body>

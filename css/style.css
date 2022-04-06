@@ -1,0 +1,217 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-size: 62.5%;
+}
+
+.navBar {
+    background-color: orange;
+    margin:0;
+    position: relative;
+    position: sticky;
+    top:0;
+    z-index: 4;
+}
+
+.indexLinks {
+    display: inline-block;
+    margin-right: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.indexLinksStyle {
+    color: brown;
+    text-decoration: none;
+    border-top: solid 0.1rem;
+    border-right: solid 0.1rem;
+    padding: 0.2rem;
+    font-size: 1rem;
+}
+
+.indexLinksUbication1 {
+    text-align: right;
+}
+
+.indexLinksUbication2 {
+    text-align: right;
+    display: inline-block;
+    margin-right: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.titleLogo {
+    position: absolute;
+    left: 5rem;
+    top: 1rem;
+    font-size: 2.5rem;
+}
+
+.socialMediaBar {
+    background-color: orange;
+    height: 20rem;
+    padding: 2rem;
+    text-align: left;
+}
+
+/*footer {
+    background-color: orange;
+    height: 20rem;
+    padding: 2rem;
+    text-align: left;
+}*/
+
+.socialMediaLinks{
+    color: brown;
+    text-decoration: none;
+    font-size: 2rem;
+    border-bottom: solid 0.3rem;
+    border-left: solid 0.3rem;
+}
+
+/*footer a {
+    color: brown;
+    text-decoration: none;
+    font-size: 2rem;
+    border-bottom: solid 0.3rem;
+    border-left: solid 0.3rem;
+}*/
+
+.socialMediaSeparation {
+    margin-bottom: 2rem;
+}
+
+/*footer div {
+    margin-bottom: 2rem;
+}*/
+
+.imagenDeFondo {
+    background-image: url("../img/logo-g2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100rem;
+    width: auto;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+main {
+    position: relative;
+}
+
+.tituloArriba {
+    position:absolute;
+    top: 22%;
+    right: 40%;
+    left: 40%;
+    color:rgb(148, 68, 16);
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.parrafoAbajo {
+    position:absolute;
+    bottom: 22%;
+    right: 40%;
+    left: 40%;
+    color: rgb(148, 68, 16);
+    font-size: 2.5rem;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.tituloPrincipal {
+    color: rgb(148, 68, 16);
+    font-size: 4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    margin-left: 2rem;
+    text-decoration: underline;
+}
+
+.fondo {
+    background-color: antiquewhite;
+    position:relative;
+}
+
+.container {
+    text-align: left;
+    width: auto;
+    font-size: 1.8rem;
+    padding: 2% 15rem;
+}
+
+.servicios {
+    display: inline-block;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-decoration: underline;
+    border: solid 0.4rem steelblue;
+    border-radius: 2rem;
+    width: 20rem;
+    padding: 2rem;
+    margin: 1rem;
+    background-color: aqua;
+    color: brown;
+}
+
+.imgServicios {
+    height: 15rem;
+    width: 20rem;
+    border-radius: 1rem;
+}
+
+.containerGallery {
+    text-align: center;
+    width: auto;
+    padding: 2%;
+}
+
+.containerGallery img {
+    height: 20rem;
+}
+
+.containerAbout {
+    text-align: left;
+    height: 20rem;
+    width: auto;
+    font-size: 1.4rem;
+    padding: 2%;
+}
+
+.imgAbout img{
+    border-radius: 4rem;
+    height: 15rem;
+    width: 20rem;
+    margin: 1rem;
+}
+
+.textAbout {
+    position:absolute;
+    top: 30%;
+    right: 2%;
+    left: 48rem;
+    color: rgb(148, 68, 16);
+}
+
+.form {
+    padding: 1%;
+    margin: 2%;
+}
+
+.whatsapp {
+    position:fixed;
+    right: 2rem;
+    bottom: 2rem;
+    border: none;
+}
+
+.whatsapp img {
+    height: 4rem;
+}
