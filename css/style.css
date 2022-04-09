@@ -148,6 +148,14 @@ body {
     border-left: solid 0.2rem;
 }
 
+.socialMediaSeparation:hover {
+    transform: scale(1.1,1.1);
+}
+
+.utilesBar:hover {
+    transform: scale(1.1,1.1);
+}
+
 .utilesBar {
     grid-area: Utiles;
     margin: 6%;
@@ -274,7 +282,7 @@ body {
     0% {
         opacity: 0;
     }
-    80% {
+    40% {
         opacity: 0;
     }
     100% {
