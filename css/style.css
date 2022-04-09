@@ -9,7 +9,8 @@ body {
 
 /* ..............................................Header Sticky para Desktop 1200px en adelante.............................................. */
 .navBar {
-    background-color: orange;
+    /* background-color: orange; */
+    background-image: linear-gradient(to bottom, #02142D, #062149, #244677, #3C5C8B);
     margin:0;
     position: relative;
     position: sticky;
@@ -27,8 +28,12 @@ body {
     list-style: none; 
 }
 
+.indexLinks:hover {
+    transform: scale(1.2,1.2);
+}
+
 .indexLinksStyle {
-    color: brown;
+    color: black;
     text-decoration: none;
     border-top: solid 0.1rem;
     border-right: solid 0.1rem;
@@ -121,7 +126,8 @@ body {
 
 /* ..............................................Footer para Desktop 1200px en adelante.............................................. */
 .endBar {
-    background-color: orange;
+    /* background-color: orange; */
+    background-image: linear-gradient(to top, #02142D, #062149, #244677, #3C5C8B);
     height: 20rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -135,7 +141,7 @@ body {
 }
 
 .endMediaLinks{
-    color: brown;
+    color: black;
     text-decoration: none;
     font-size: 1.5rem;
     border-bottom: solid 0.2rem;
@@ -163,7 +169,7 @@ body {
     height: 4rem;
 }
 
-/* ..............................................Footer Sticky para Laptop 769px a 1024px.............................................. */
+/* ..............................................Footer para Laptop 769px a 1024px.............................................. */
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     .endMediaLinks {
@@ -264,13 +270,28 @@ body {
     justify-items: center;
 }
 
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .tituloArriba {
     grid-area: Titulo;
     align-self: end;
     font-size: 4rem;
-    color:rgb(148, 68, 16);
+    color:#944410;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
+    animation-name: aparecer;
+    animation-duration: 2s;
+    animation-iteration-count: 1s;
 }
 
 .parrafoAbajo {
@@ -279,7 +300,11 @@ body {
     color:rgb(148, 68, 16);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
+    animation-name: aparecer;
+    animation-duration: 2s;
+    animation-iteration-count: 1s;
 }
+
 
 /* ..............................................Main del Index para Laptop 769px a 1200px.............................................. */
 
@@ -334,11 +359,12 @@ body {
 }
 
 .fondo {
-    background-color: rgb(250, 234, 214);
+    /* background-color: #faead6; */
+    background-image: radial-gradient(#faead6 50%, #B5966E);
     position:relative;
 }
 
-/* ..............................................Propiedades compartidasdel sitio web para Laptop 769px a 1200px.............................................. */
+/* ..............................................Propiedades compartidas del sitio web para Laptop 769px a 1200px.............................................. */
 
 @media only screen and (min-width: 769px) and (max-width: 1200px){
     .tituloPrincipal {
@@ -456,6 +482,10 @@ body {
 .containerGallery img {
     height: 25rem;
     margin: 0.4%;
+}
+
+.containerGallery img:hover {
+    transform: scale(1.2,1.2)
 }
 
 /* ..............................................Galeria para Laptop 769px a 1200px.............................................. */
