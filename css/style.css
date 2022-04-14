@@ -9,7 +9,6 @@ body {
 
 /* ..............................................Header Sticky para Desktop 1200px en adelante.............................................. */
 .navBar {
-    /* background-color: orange; */
     background-image: linear-gradient(to bottom, #02142D, #062149, #244677, #3C5C8B);
     margin:0;
     position: relative;
@@ -24,7 +23,6 @@ body {
 
 .indexLinks {
     margin-right: 1rem;
-    margin-bottom: 0.2rem;
     list-style: none; 
 }
 
@@ -44,6 +42,7 @@ body {
 .indexLinksUbication1 {
     grid-area: Navegacion;
     display:flex;
+    align-items: flex-end;
 }
 
 .indexLinksUbication2 {
@@ -53,7 +52,12 @@ body {
     justify-content: right;
 }
 
+.navbar>.container-fluid {
+    justify-content: flex-end;
+}
+
 .titleLogo {
+    color: black;
     position: absolute;
     left: 5rem;
     top: 1rem;
@@ -78,6 +82,9 @@ body {
     .indexLinksStyle {
         font-size: 0.8rem;
     }
+    .indexLinksUbication2 {
+        row-gap: 0.8rem;
+    }
 }
 
 /* ..............................................Header Sticky para Tablet 481px a 768px.............................................. */
@@ -96,6 +103,9 @@ body {
     }
     .indexLinksStyle {
         font-size: 0.7rem;
+    }
+    .indexLinksUbication2 {
+        row-gap: 0.7rem;
     }
 }
 
@@ -117,10 +127,7 @@ body {
         font-size: 0.6rem;
     }
     .indexLinksUbication2 {
-        justify-content: space-around;
-    }
-    .indexLinks {
-        margin-right:auto;
+        row-gap: 0.5rem;
     }
 }
 
@@ -164,6 +171,7 @@ body {
 
 .mediaLogo{
     height: 2rem;
+    vertical-align: text-top;
 }
 
 .whatsapp {
