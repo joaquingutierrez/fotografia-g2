@@ -427,7 +427,7 @@ body {
 }
 
 .imgAbout img{
-    border-radius: 4rem;
+/*     border-radius: 4rem; */
     height: 10rem;
     width: 15rem;
     margin: 1rem;
@@ -534,80 +534,99 @@ body {
 
 /* ..............................................Servicios para Desktop 1200px en adelante.............................................. */
 
-.containerServices {
+/* .containerServices {
     text-align: center;
     width: auto;
     font-size: 1.8rem;
     padding: 2% 5%;
-}
+} */
 
 .servicios {
-    display: inline-block;
+    /* display: inline-block;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.5rem;
     font-style: italic;
-    text-decoration: underline;
+    text-decoration: underline; */
     border: solid 0.4rem #B69870;
-    border-radius: 2rem;
-    width: 20rem;
+/*     border-radius: 2rem; */
+/*     width: 20rem;
     padding: 2%;
-    margin: 1%;
+    margin: 1%; */
     background-color: #D7C0A1;
-    color: brown;
+/*     color: brown; */
 }
 
-.imgServicios {
+.row {
+    justify-content: center;
+    padding:1%;
+}
+
+
+.card-title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-decoration: underline;
+    color: rgb(148, 68, 16)
+}
+
+/* .card {
+    margin: 1%;
+    width: fit-content;
+} */
+
+/* .imgServicios {
     height: 15rem;
     width: 20rem;
     border-radius: 1rem;
-}
+} */
 
 /* ..............................................Servicios para Laptop 769px a 1200px.............................................. */
 
-@media only screen and (min-width: 769px) and (max-width: 1200px) {
+/* @media only screen and (min-width: 769px) and (max-width: 1200px) {
     .containerServices {
         padding: 0%;
     }
     .servicios {
         font-size: 1.4rem;
         width: 17rem;
-    }
-    .imgServicios {
+    } */
+/*     .imgServicios {
         height: 12rem;
         width: 17rem;
     }
-}
+} */
 
 /* ..............................................Servicios para Tablet 481px a 768px.............................................. */
 
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+/* @media only screen and (min-width: 481px) and (max-width: 768px) {
     .servicios {
         padding: 1%;
         font-size: 1.2rem;
         width: 11rem;
-    }
-    .imgServicios {
+    } */
+/*     .imgServicios {
         height: 7rem;
         width: 11rem;
     }
-}
+} */
 
 /* ..............................................Servicios para Celulares 320px a 480px.............................................. */
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+/* @media only screen and (min-width: 320px) and (max-width: 480px) {
     .servicios {
         padding: 2%;
         font-size: 0.8rem;
         width: 10rem;
-    }
-    .imgServicios {
+    } */
+/*     .imgServicios {
         height: 5rem;
         width: 10rem;
     }
-}
+} */
 
-/* ..............................................Servicios para Desktop 1200px en adelante.............................................. */
+/* ..............................................Contacto para Desktop 1200px en adelante.............................................. */
 
 .containerForm {
     font-size: 1.8rem;
@@ -640,8 +659,11 @@ body {
 .formComentario {
     width: 75%;
 }
-    
-/* ..............................................Servicios para Laptop 769px a 1200px.............................................. */
+
+.centrado {
+    margin: 0 auto;
+}
+/* ..............................................Contacto para Laptop 769px a 1200px.............................................. */
 
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
     .containerForm {
@@ -653,7 +675,7 @@ body {
     }
 }
 
-/* ..............................................Servicios para Tablet 481px a 768px.............................................. */
+/* ..............................................Contacto para Tablet 481px a 768px.............................................. */
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     .containerForm {
@@ -671,7 +693,7 @@ body {
     }
 }
 
-/* ..............................................Servicios para Celulares 320px a 480px.............................................. */
+/* ..............................................Contacto para Celulares 320px a 480px.............................................. */
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
     .containerForm {

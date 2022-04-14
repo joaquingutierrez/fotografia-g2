@@ -49,42 +49,106 @@
     <main class="fondo">
         <h1 class="tituloPrincipal animate__animated animate__fadeInTopRight">Contacto</h1>
 
-        <div class="containerForm">
-            <fieldset class="form">
-                <legend>Datos personales</legend>
-                <div class="formCentrarConFlex">
-                    <label for="name">Nombre y apellido:</label>
-                    <input type="text" name="" id="name" placeholder="Ingrese su nombre y apellido" class="formDatosPersonales">
+        <div class="containerForm d-none d-sm-none d-md-flex d-lg-flex d-xl-flex d-xxl-flex">
+            <form class="row g-3">
+                <div class="col-6">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
                 </div>
-            
-                <div class="formCentrarConFlex">
-                    <label for="tel">Teléfono:</label>
-                    <input type="tel" name="" id="tel" placeholder="Ingese su teléfono" class="formDatosPersonales">
+                <div class="col-6">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
                 </div>
-            
-                <div class="formCentrarConFlex">
-                    <label for="e-mail">Correo electrónico:</label>
-                    <input type="email" name="" id="e-mail" placeholder="Ingrese su e-mail" class="formDatosPersonales">
+                <div class="col-6">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="text" class="form-control" id="telefono" placeholder="Ingrese su número de teléfono">
                 </div>
-            
-                <div>
-                    <label for="newsletter">Deseo recibir en mi correo un aviso cada vez que se suban nuevas imágenes el sitio web:</label>
-                    <input type="checkbox" name="" id="newsletter">
+                <div class="col-6">
+                    <label for="e-mail" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="e-mail" placeholder="Ingrese su e-mail">
                 </div>
-        
-        
-            </fieldset>
+            </form>
         
             <fieldset class="form containerComentario">
                 <legend>Dejanos tu mensaje</legend>
                 <textarea name="" id="" cols="60" rows="10" placeholder="Ingrese su mensaje" class="formComentario"></textarea>
             </fieldset>
-        
-            <input type="button" value="Enviar">
+
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar</button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Formulario</h5>
+                        </div>
+                        <div class="modal-body">Mensaje enviado con exito</div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
     
 
         </div>
-       
+
+        <!-- formulario para pantallas grandes -->
+
+
+        <!-- Fin formulario para pantallas grandes -->
+
+        <div class="d-md-none d-lg-none d-xl-none d-xxl-none">
+            <div class="form-floating mb-3">
+
+                <input type="text" class="form-control" id="floatingInput" placeholder="Ingrese su nombre y apellido">
+                <label for="floatingInput">Ingrese su nombre y apellido</label>
+            </div>
+    
+            <div class="form-floating mb-3">
+                <input type="tel" class="form-control" id="floatingTel" placeholder="Ingrese su número de teléfono">
+                <label for="floatingTel">Ingrese su número de teléfono</label>
+            </div>
+    
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingPassword" placeholder="Ingrese su e-mail">
+                <label for="floatingPassword">Ingrese su e-mail</label>
+            </div>
+    
+            <div class="form-check form-switch mb-3">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Deseo recibir en mi correo un aviso cada vez que se suban nuevas imágenes el sitio web </label>
+            </div>
+    
+            <div class="form-floating mb-3">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Comentarios</label>
+            </div>
+
+            <button type="button" class="btn btn-success d-block centrado" data-bs-toggle="modal" data-bs-target="#exampleModal2">Enviar</button>
+
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Formulario</h5>
+                        </div>
+                        <div class="modal-body">Mensaje enviado con exito</div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+
+        
+
+
     </main>
     
 
