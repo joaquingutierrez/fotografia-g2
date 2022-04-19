@@ -37,6 +37,27 @@ body {
     border-right: solid 0.1rem;
     padding: 0.2rem;
     font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position:relative;
+}
+
+.indexLinksStyle:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 0.1rem;
+    width: 100%;
+    background-color: black;
+
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.indexLinksStyle:hover:after {
+    transform-origin: right;
+    transform: scaleX(1);
 }
 
 .indexLinksUbication1 {
@@ -133,7 +154,6 @@ body {
 
 /* ..............................................Footer para Desktop 1200px en adelante.............................................. */
 .endBar {
-    /* background-color: orange; */
     background-image: linear-gradient(to top, #02142D, #062149, #244677, #3C5C8B);
     height: 20rem;
     display: grid;
@@ -145,33 +165,38 @@ body {
 .socialMediaSeparation {
     grid-area: Social;
     margin: 3%;
+    width: fit-content;
 }
 
 .endMediaLinks{
-    color: black;
+    color: black!important;
     text-decoration: none;
     font-size: 1.5rem;
     border-bottom: solid 0.2rem;
     border-left: solid 0.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .socialMediaSeparation:hover {
-    transform: scale(1.1,1.1);
+    transform: scale(1.05,1.05);
 }
 
 .utilesBar:hover {
-    transform: scale(1.1,1.1);
+    transform: scale(1.05,1.05);
 }
 
 .utilesBar {
     grid-area: Utiles;
-    margin: 6%;
-    text-align: center;
+    margin: 3%;
+    width: fit-content;
+    height: fit-content;
+    justify-self: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .mediaLogo{
     height: 2rem;
-    vertical-align: text-top;
+    vertical-align: text-bottom;
 }
 
 .whatsapp {
@@ -427,7 +452,6 @@ body {
 }
 
 .imgAbout img{
-/*     border-radius: 4rem; */
     height: 10rem;
     width: 15rem;
     margin: 1rem;
@@ -534,27 +558,9 @@ body {
 
 /* ..............................................Servicios para Desktop 1200px en adelante.............................................. */
 
-/* .containerServices {
-    text-align: center;
-    width: auto;
-    font-size: 1.8rem;
-    padding: 2% 5%;
-} */
-
 .servicios {
-    /* display: inline-block;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.5rem;
-    font-style: italic;
-    text-decoration: underline; */
     border: solid 0.4rem #B69870;
-/*     border-radius: 2rem; */
-/*     width: 20rem;
-    padding: 2%;
-    margin: 1%; */
     background-color: #D7C0A1;
-/*     color: brown; */
 }
 
 .row {
@@ -571,60 +577,14 @@ body {
     color: rgb(148, 68, 16)
 }
 
-/* .card {
-    margin: 1%;
-    width: fit-content;
-} */
-
-/* .imgServicios {
-    height: 15rem;
-    width: 20rem;
-    border-radius: 1rem;
-} */
-
 /* ..............................................Servicios para Laptop 769px a 1200px.............................................. */
 
-/* @media only screen and (min-width: 769px) and (max-width: 1200px) {
-    .containerServices {
-        padding: 0%;
-    }
-    .servicios {
-        font-size: 1.4rem;
-        width: 17rem;
-    } */
-/*     .imgServicios {
-        height: 12rem;
-        width: 17rem;
-    }
-} */
 
 /* ..............................................Servicios para Tablet 481px a 768px.............................................. */
 
-/* @media only screen and (min-width: 481px) and (max-width: 768px) {
-    .servicios {
-        padding: 1%;
-        font-size: 1.2rem;
-        width: 11rem;
-    } */
-/*     .imgServicios {
-        height: 7rem;
-        width: 11rem;
-    }
-} */
 
 /* ..............................................Servicios para Celulares 320px a 480px.............................................. */
 
-/* @media only screen and (min-width: 320px) and (max-width: 480px) {
-    .servicios {
-        padding: 2%;
-        font-size: 0.8rem;
-        width: 10rem;
-    } */
-/*     .imgServicios {
-        height: 5rem;
-        width: 10rem;
-    }
-} */
 
 /* ..............................................Contacto para Desktop 1200px en adelante.............................................. */
 
