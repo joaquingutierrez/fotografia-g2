@@ -1,672 +1,490 @@
 * {
-    margin:0;
-    padding:0;
-}
+  margin: 0;
+  padding: 0; }
 
 body {
-    font-size: 62.5%;
-}
+  font-size: 62.5%; }
 
 /* ..............................................Header Sticky para Desktop 1200px en adelante.............................................. */
 .navBar {
-    background-image: linear-gradient(to bottom, #02142D, #062149, #244677, #3C5C8B);
-    margin:0;
-    position: relative;
-    position: sticky;
-    top:0;
-    z-index: 4;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "Logo Navegacion";
-}
+  background-image: linear-gradient(to bottom, #02142D, #062149, #244677, #3C5C8B);
+  margin: 0;
+  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "Logo Navegacion"; }
+  .navBar .container-fluid {
+    justify-content: flex-end; }
 
 .indexLinks {
-    margin-right: 1rem;
-    list-style: none; 
-}
+  margin-right: 1rem;
+  list-style: none; }
 
 .indexLinks:hover {
-    transform: scale(1.2,1.2);
-}
+  transform: scale(1.2, 1.2); }
 
 .indexLinksStyle {
-    color: black;
-    text-decoration: none;
-    border-top: solid 0.1rem;
-    border-right: solid 0.1rem;
-    padding: 0.2rem;
-    font-size: 1rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position:relative;
-}
+  color: black !important;
+  text-decoration: none;
+  border-top: solid 0.1rem;
+  border-right: solid 0.1rem;
+  padding: 0.2rem;
+  font-size: 1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: relative; }
 
 .indexLinksStyle:after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    height: 0.1rem;
-    width: 100%;
-    background-color: black;
-
-    transform-origin: left;
-    transform: scaleX(0);
-    transition: transform 0.2s ease-in-out;
-}
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 0.1rem;
+  width: 100%;
+  background-color: black;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in-out; }
 
 .indexLinksStyle:hover:after {
-    transform-origin: right;
-    transform: scaleX(1);
-}
+  transform-origin: right;
+  transform: scaleX(1); }
 
 .indexLinksUbication1 {
-    grid-area: Navegacion;
-    display:flex;
-    align-items: flex-end;
-}
+  grid-area: Navegacion;
+  display: flex;
+  align-items: flex-end; }
 
 .indexLinksUbication2 {
-    width: 100%;
-    display:flex;
-    align-items: flex-end;
-    justify-content: right;
-}
-
-.navbar>.container-fluid {
-    justify-content: flex-end;
-}
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: right; }
 
 .titleLogo {
-    color: black;
-    position: absolute;
-    left: 5rem;
-    top: 1rem;
-    font-size: 2.5rem;
-}
+  color: black !important;
+  position: absolute;
+  left: 5rem;
+  top: 1rem;
+  font-size: 2.5rem; }
 
 .favicon {
-    height: 5rem;
-}
-
-/* ..............................................Header Sticky para Laptop 769px a 1024px.............................................. */
-
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-    .titleLogo {
-        left: 4rem;
-        top: 0.5rem;
-        font-size: 2.3rem;
-    }
-    .favicon {
-        height: 3.8rem;
-    }
-    .indexLinksStyle {
-        font-size: 0.8rem;
-    }
-    .indexLinksUbication2 {
-        row-gap: 0.8rem;
-    }
-}
-
-/* ..............................................Header Sticky para Tablet 481px a 768px.............................................. */
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-    .titleLogo {
-        display: none;
-    }
-    .navBar {
-        display: grid;
-        grid-template-columns: 1fr 5fr;
-        grid-template-areas: "Logo Navegacion"; 
-    }
-    .favicon {
-        height: 4rem;
-    }
-    .indexLinksStyle {
-        font-size: 0.7rem;
-    }
-    .indexLinksUbication2 {
-        row-gap: 0.7rem;
-    }
-}
-
-/* ..............................................Header Sticky para Celular 320px a 480px.............................................. */
-
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-    .titleLogo {
-        display: none;
-    }
-    .navBar {
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-        grid-template-areas: "Logo Navegacion"; 
-    }
-    .favicon {
-        height: 3rem;
-    }
-    .indexLinksStyle {
-        font-size: 0.6rem;
-    }
-    .indexLinksUbication2 {
-        row-gap: 0.5rem;
-    }
-}
+  height: 5rem; }
 
 /* ..............................................Footer para Desktop 1200px en adelante.............................................. */
 .endBar {
-    background-image: linear-gradient(to top, #02142D, #062149, #244677, #3C5C8B);
-    height: 20rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "Social Utiles none"; 
-}
+  background-image: linear-gradient(to top, #02142D, #062149, #244677, #3C5C8B);
+  height: 20rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "Social Utiles none"; }
 
 .socialMediaSeparation {
-    grid-area: Social;
-    margin: 3%;
-    width: fit-content;
-}
+  grid-area: Social;
+  margin: 3%;
+  width: fit-content; }
 
-.endMediaLinks{
-    color: black!important;
-    text-decoration: none;
-    font-size: 1.5rem;
-    border-bottom: solid 0.2rem;
-    border-left: solid 0.2rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+.endMediaLinks {
+  color: black !important;
+  text-decoration: none;
+  font-size: 1.5rem;
+  border-bottom: solid 0.2rem;
+  border-left: solid 0.2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
 
 .socialMediaSeparation:hover {
-    transform: scale(1.05,1.05);
-}
+  transform: scale(1.05, 1.05); }
 
 .utilesBar:hover {
-    transform: scale(1.05,1.05);
-}
+  transform: scale(1.05, 1.05); }
 
 .utilesBar {
-    grid-area: Utiles;
-    margin: 3%;
-    width: fit-content;
-    height: fit-content;
-    justify-self: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+  grid-area: Utiles;
+  margin: 3%;
+  width: fit-content;
+  height: fit-content;
+  justify-self: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
 
-.mediaLogo{
-    height: 2rem;
-    vertical-align: text-bottom;
-}
+.mediaLogo {
+  height: 2rem;
+  vertical-align: text-bottom; }
 
 .whatsapp {
-    position:fixed;
-    right: 2rem;
-    bottom: 2rem;
-    border: none;
-}
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  border: none; }
 
 .whatsapp img {
-    height: 4rem;
-}
-
-/* ..............................................Footer para Laptop 769px a 1024px.............................................. */
-
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-    .endMediaLinks {
-        font-size: 0.8rem;
-        border-bottom: solid 0.14rem;
-        border-left: solid 0.14rem;
-    }
-    .mediaLogo {
-        height: 1.5rem;
-    }
-    .socialMediaSeparation {
-        margin-bottom: 9%;
-    }
-    .whatsapp {
-        right: 1rem;
-        bottom: 1rem;
-    }
-    .whatsapp img {
-        height: 3rem;
-    }
-}
-
-/* ..............................................Footer para Tablet 481px a 768px.............................................. */
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-    .endBar {
-        height: 13rem;
-    }
-    .endMediaLinks {
-        font-size: 0.9rem;
-        border-bottom: solid 0.14rem;
-        border-left: solid 0.14rem;
-    }
-    .mediaLogo {
-        display: none;
-    }
-    .socialMediaSeparation {
-        margin-top: 9%;
-    }
-    .whatsapp {
-        right: 1rem;
-        bottom: 1rem;
-    }
-    .whatsapp img {
-        height: 2.8rem;
-    }
-}
-
-/* ..............................................Footer para Celular 320px a 480px.............................................. */
-
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-    .endBar {
-        height: 15rem;
-    }
-    .endMediaLinks {
-        font-size: 0.6rem;
-        border-bottom: solid 0.14rem;
-        border-left: solid 0.14rem;
-    }
-    .mediaLogo {
-        display: none;
-    }
-    .socialMediaSeparation {
-        margin-top: 9%;
-        margin-bottom: 20%;
-    }
-    .utilesBar {
-        margin: 9%;
-    }
-    .whatsapp {
-        right: 1rem;
-        bottom: 1rem;
-    }
-    .whatsapp img {
-        height: 2.8rem;
-    }
-}
+  height: 4rem; }
 
 /* ..............................................Main del Index para Desktop 1200px en adelante.............................................. */
-
 .imagenDeFondo {
-    background-image: url("../img/logo-g2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100rem;
-    width: auto;
-    background-position-x: center;
-    background-position-y: center;
-    position: relative;
-    display: grid;
-    grid-template-columns: 33.3%;
-    grid-template-rows: 33.3% 33.3% 33.3%;
-    grid-template-areas: 
-        "Titulo"
-        "none"
-        "Parrafo";
-    justify-content: center;
-    justify-items: center;
-}
+  background-image: url("../img/logo-g2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100rem;
+  width: auto;
+  background-position-x: center;
+  background-position-y: center;
+  position: relative;
+  display: grid;
+  grid-template-columns: 33.3%;
+  grid-template-rows: 33.3% 33.3% 33.3%;
+  grid-template-areas: "Titulo" "none" "Parrafo";
+  justify-content: center;
+  justify-items: center; }
 
 @keyframes aparecer {
-    0% {
-        opacity: 0;
-    }
-    40% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
+  0%, 40% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 .tituloArriba {
-    grid-area: Titulo;
-    align-self: end;
-    font-size: 4rem;
-    color:#944410;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    animation-name: aparecer;
-    animation-duration: 2s;
-    animation-iteration-count: 1s;
-}
+  grid-area: Titulo;
+  align-self: end;
+  font-size: 4rem;
+  color: #944410;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  animation-name: aparecer;
+  animation-duration: 2s;
+  animation-iteration-count: 1s; }
 
 .parrafoAbajo {
-    grid-area: Parrafo;
-    font-size: 2.5rem;
-    color:rgb(148, 68, 16);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    animation-name: aparecer;
-    animation-duration: 2s;
-    animation-iteration-count: 1s;
-}
-
-
-/* ..............................................Main del Index para Laptop 769px a 1200px.............................................. */
-
-@media only screen and (min-width: 769px) and (max-width: 1200px) {
-    .imagenDeFondo {
-        height: 60rem;
-    }
-    .tituloArriba {
-        font-size: 2.5rem;
-    }
-    .parrafoAbajo {
-        font-size: 1.5rem;
-    }
-}
-
-/* ..............................................Main del Index para Tablet 481px a 768px.............................................. */
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-    .imagenDeFondo {
-        height: 50rem;
-    }
-    .tituloArriba {
-        font-size: 2rem;
-    }
-    .parrafoAbajo {
-        font-size: 1.1rem;
-    }
-}
-
-/* ..............................................Main del Index para Celular 320px a 480px.............................................. */
-
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-    .imagenDeFondo {
-        height: 33rem;
-    }
-    .tituloArriba {
-        font-size: 1.1rem;
-    }
-    .parrafoAbajo {
-        font-size: 0.7rem;
-    }
-}
+  grid-area: Parrafo;
+  font-size: 2.5rem;
+  color: #944410;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  animation-name: aparecer;
+  animation-duration: 2s;
+  animation-iteration-count: 1s; }
 
 /* ..............................................Propiedades compartidas del sitio web para Desktop 1200px en adelante.............................................. */
 .tituloPrincipal {
-    color: rgb(148, 68, 16);
-    font-size: 4rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: left;
-    margin-left: 2rem;
-    text-decoration: underline;
-}
+  color: #944410;
+  font-size: 4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: left;
+  margin-left: 2rem;
+  text-decoration: underline; }
 
 .fondo {
-    /* background-color: #faead6; */
-    background-image: radial-gradient(#faead6 50%, #B5966E);
-    position:relative;
-}
+  background-image: radial-gradient(#faead6 50%, #B5966E);
+  position: relative; }
 
-/* ..............................................Propiedades compartidas del sitio web para Laptop 769px a 1200px.............................................. */
+/* ..............................................About para Desktop 1200px en adelante.............................................. */
+.gridAbout {
+  display: grid;
+  grid-template-columns: 1fr 1.8fr;
+  grid-template-rows: fit-content fit-content;
+  grid-template-areas: "Titulo Titulo" "Fotos Parrafo";
+  align-items: center;
+  justify-items: center; }
 
-@media only screen and (min-width: 769px) and (max-width: 1200px){
-    .tituloPrincipal {
-        font-size: 2.8rem;
-    }
-}
+.titleGridAbout {
+  grid-area: Titulo;
+  justify-self: left; }
+
+.imgAbout {
+  grid-area: Fotos;
+  display: flex; }
+
+.imgAbout img {
+  height: 10rem;
+  width: 15rem;
+  margin: 1rem; }
+
+.textAbout {
+  grid-area: Parrafo;
+  font-size: 1.4rem;
+  color: #944410;
+  margin: 5%; }
+
+/* ..............................................Galeria para Desktop 1200px en adelante.............................................. */
+.containerGallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2%; }
+
+.containerGallery img {
+  height: 25rem;
+  margin: 0.4%; }
+
+.containerGallery img:hover {
+  transform: scale(1.2, 1.2); }
+
+/* ..............................................Servicios para Desktop 1200px en adelante.............................................. */
+.servicios {
+  border: solid 0.4rem #B69870;
+  background-color: #D7C0A1; }
+
+.row {
+  justify-content: center;
+  padding: 1%; }
+
+.card-title {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.5rem;
+  font-style: italic;
+  text-decoration: underline;
+  color: #944410; }
+
+/* ..............................................Contacto para Desktop 1200px en adelante.............................................. */
+.containerForm {
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.formCentrarConFlex {
+  display: flex;
+  align-items: center; }
+
+.form {
+  padding: 1%;
+  margin: 2%;
+  width: 65%; }
+
+.formDatosPersonales {
+  height: 1.6rem;
+  width: 20rem;
+  margin-left: 0.3rem; }
+
+.containerComentario {
+  text-align: center; }
+
+.formComentario {
+  width: 75%; }
+
+.centrado {
+  margin: 0 auto; }
+
+/* ..............................................imports para las media queries.............................................. */
+/* ..............................................Header Sticky para Celular 320px a 480px.............................................. */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .titleLogo {
+    display: none; }
+  .navBar {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "Logo Navegacion"; }
+  .favicon {
+    height: 3rem; }
+  .indexLinksStyle {
+    font-size: 0.6rem; }
+  .indexLinksUbication2 {
+    row-gap: 0.5rem; } }
+
+/* ..............................................Footer para Celular 320px a 480px.............................................. */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .endBar {
+    height: 15rem; }
+  .endMediaLinks {
+    font-size: 0.6rem;
+    border-bottom: solid 0.14rem;
+    border-left: solid 0.14rem; }
+  .mediaLogo {
+    display: none; }
+  .socialMediaSeparation {
+    margin-top: 9%;
+    margin-bottom: 20%; }
+  .utilesBar {
+    margin: 9%; }
+  .whatsapp {
+    right: 1rem;
+    bottom: 1rem; }
+  .whatsapp img {
+    height: 2.8rem; } }
+
+/* ..............................................Main del Index para Celular 320px a 480px.............................................. */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .imagenDeFondo {
+    height: 33rem; }
+  .tituloArriba {
+    font-size: 1.1rem; }
+  .parrafoAbajo {
+    font-size: 0.7rem; } }
+
+/* ..............................................Propiedades compartidas del sitio web para Celular 320px a 480px.............................................. */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .tituloPrincipal {
+    font-size: 1.1rem; } }
+
+/* ..............................................About para Celulares 320px a 480px.............................................. */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .gridAbout {
+    grid-template-columns: 1fr;
+    grid-template-rows: fit-content fit-content;
+    grid-template-areas: "Titulo" "Fotos" "Parrafo";
+    justify-content: center; }
+  .imgAbout img {
+    height: 5rem;
+    width: 7rem;
+    margin: 0.5rem; }
+  .textAbout {
+    font-size: 0.7rem;
+    text-align: center; } }
+
+/* ..............................................Galeria para Celulares 320px a 480px.............................................. */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .containerGallery {
+    flex-direction: column;
+    align-items: center; }
+  .containerGallery img {
+    height: 11rem; } }
+
+/* ..............................................Contacto para Celulares 320px a 480px.............................................. */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .containerForm {
+    font-size: 0.7rem; }
+  .form {
+    width: 90%; }
+  .formDatosPersonales {
+    height: 0.7rem;
+    width: 12rem; }
+  .formComentario {
+    width: 90%; } }
+
+/* ..............................................Header Sticky para Tablet 481px a 768px.............................................. */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .titleLogo {
+    display: none; }
+  .navBar {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas: "Logo Navegacion"; }
+  .favicon {
+    height: 4rem; }
+  .indexLinksStyle {
+    font-size: 0.7rem; }
+  .indexLinksUbication2 {
+    row-gap: 0.7rem; } }
+
+/* ..............................................Footer para Tablet 481px a 768px.............................................. */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .endBar {
+    height: 13rem; }
+  .endMediaLinks {
+    font-size: 0.9rem;
+    border-bottom: solid 0.14rem;
+    border-left: solid 0.14rem; }
+  .mediaLogo {
+    display: none; }
+  .socialMediaSeparation {
+    margin-top: 9%; }
+  .whatsapp {
+    right: 1rem;
+    bottom: 1rem; }
+  .whatsapp img {
+    height: 2.8rem; } }
+
+/* ..............................................Main del Index para Tablet 481px a 768px.............................................. */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .imagenDeFondo {
+    height: 50rem; }
+  .tituloArriba {
+    font-size: 2rem; }
+  .parrafoAbajo {
+    font-size: 1.1rem; } }
 
 /* ..............................................Propiedades compartidas del sitio web para Tablet 481px a 768px.............................................. */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-    .tituloPrincipal {
-        font-size: 2rem;
-    }
-}
-
-/* ..............................................Propiedades compartidas del sitio web para Celular 320px a 480px.............................................. */
-
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-    .tituloPrincipal {
-        font-size: 1.1rem;
-    }
-}
-
-/* ..............................................About para Desktop 1200px en adelante.............................................. */
-
-.gridAbout {
-    display: grid;
-    grid-template-columns: 1fr 1.8fr;
-    grid-template-rows: fit-content fit-content;
-    grid-template-areas: 
-        "Titulo Titulo"
-        "Fotos Parrafo";
-    align-items: center;
-    justify-items: center;
-}
-
-.titleGridAbout {
-    grid-area: Titulo;
-    justify-self: left;
-}
-
-.imgAbout {
-    grid-area: Fotos;
-    display: flex;
-}
-
-.imgAbout img{
-    height: 10rem;
-    width: 15rem;
-    margin: 1rem;
-}
-
-.textAbout {
-    grid-area: Parrafo;
-    font-size: 1.4rem;
-    color: rgb(148, 68, 16);
-    margin: 5%;
-}
-
-/* ..............................................About para Laptop 769px a 1200px.............................................. */
-
-@media only screen and (min-width: 769px) and (max-width: 1200px) {
-    .imgAbout {
-        flex-direction: column;
-    }
-}
+  .tituloPrincipal {
+    font-size: 2rem; } }
 
 /* ..............................................About para Tablet 481px a 768px.............................................. */
-
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-    .imgAbout img{
-        height: 7rem;
-        width: 10rem;
-    }
-    .imgAbout {
-        flex-direction: column;
-    }
-    .textAbout {
-        font-size: 1.1rem;
-    }
-}
-
-/* ..............................................About para Celulares 320px a 480px.............................................. */
-
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-    .gridAbout {
-        grid-template-columns: 1fr;
-        grid-template-rows: fit-content fit-content;
-        grid-template-areas: 
-            "Titulo"
-            "Fotos"
-            "Parrafo";
-        justify-content: center;
-    }
-    .imgAbout img {
-        height: 5rem;
-        width: 7rem;
-        margin: 0.5rem;
-    }
-    .textAbout {
-        font-size: 0.7rem;
-        text-align: center;
-    }
-}
-
-/* ..............................................Galeria para Desktop 1200px en adelante.............................................. */
-
-.containerGallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 2%;
-}
-
-.containerGallery img {
-    height: 25rem;
-    margin: 0.4%;
-}
-
-.containerGallery img:hover {
-    transform: scale(1.2,1.2)
-}
-
-/* ..............................................Galeria para Laptop 769px a 1200px.............................................. */
-
-@media only screen and (min-width: 769px) and (max-width: 1200px) {
-    .containerGallery img {
-        height: 16rem;
-    }
-}
+  .imgAbout img {
+    height: 7rem;
+    width: 10rem; }
+  .imgAbout {
+    flex-direction: column; }
+  .textAbout {
+    font-size: 1.1rem; } }
 
 /* ..............................................Geleria para Tablet 481px a 768px.............................................. */
-
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-    .containerGallery img {
-        height: 13rem;
-    }
-}
-
-/* ..............................................Galeria para Celulares 320px a 480px.............................................. */
-
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-    .containerGallery {
-        flex-direction: column;
-        align-items: center;
-    }
-    .containerGallery img {
-        height: 11rem;
-    }
-}
-
-/* ..............................................Servicios para Desktop 1200px en adelante.............................................. */
-
-.servicios {
-    border: solid 0.4rem #B69870;
-    background-color: #D7C0A1;
-}
-
-.row {
-    justify-content: center;
-    padding:1%;
-}
-
-
-.card-title {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.5rem;
-    font-style: italic;
-    text-decoration: underline;
-    color: rgb(148, 68, 16)
-}
-
-/* ..............................................Servicios para Laptop 769px a 1200px.............................................. */
-
-
-/* ..............................................Servicios para Tablet 481px a 768px.............................................. */
-
-
-/* ..............................................Servicios para Celulares 320px a 480px.............................................. */
-
-
-/* ..............................................Contacto para Desktop 1200px en adelante.............................................. */
-
-.containerForm {
-    font-size: 1.8rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.formCentrarConFlex{
-    display: flex;
-    align-items: center;
-}
-
-.form {
-    padding: 1%;
-    margin: 2%;
-    width: 65%;
-}
-
-.formDatosPersonales {
-    height: 1.6rem;
-    width: 20rem;
-    margin-left: 0.3rem;
-}
-
-.containerComentario {
-    text-align: center;
-}
-
-.formComentario {
-    width: 75%;
-}
-
-.centrado {
-    margin: 0 auto;
-}
-/* ..............................................Contacto para Laptop 769px a 1200px.............................................. */
-
-@media only screen and (min-width: 769px) and (max-width: 1200px) {
-    .containerForm {
-        font-size: 1.4rem;
-    }
-    .formDatosPersonales {
-        height: 1.4rem;
-        width: 17rem;
-    }
-}
+  .containerGallery img {
+    height: 13rem; } }
 
 /* ..............................................Contacto para Tablet 481px a 768px.............................................. */
-
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-    .containerForm {
-        font-size: 1.1rem;
-    }
-    .form {
-        width: 80%;
-    }
-    .formDatosPersonales {
-        height: 1.1rem;
-        width: 14rem;
-    }
-    .formComentario {
-        width: 85%;
-    }
-}
+  .containerForm {
+    font-size: 1.1rem; }
+  .form {
+    width: 80%; }
+  .formDatosPersonales {
+    height: 1.1rem;
+    width: 14rem; }
+  .formComentario {
+    width: 85%; } }
 
-/* ..............................................Contacto para Celulares 320px a 480px.............................................. */
+/* ..............................................Header Sticky para Laptop 769px a 1024px.............................................. */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .titleLogo {
+    left: 4rem;
+    top: 0.5rem;
+    font-size: 2.3rem; }
+  .favicon {
+    height: 3.8rem; }
+  .indexLinksStyle {
+    font-size: 0.8rem; }
+  .indexLinksUbication2 {
+    row-gap: 0.8rem; } }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-    .containerForm {
-        font-size: 0.7rem;
-    }
-    .form {
-        width: 90%;
-    }
-    .formDatosPersonales {
-        height: 0.7rem;
-        width: 12rem;
-    }
-    .formComentario {
-        width: 90%;
-    }
-}
+/* ..............................................Footer para Laptop 769px a 1024px.............................................. */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .endMediaLinks {
+    font-size: 0.8rem;
+    border-bottom: solid 0.14rem;
+    border-left: solid 0.14rem; }
+  .mediaLogo {
+    height: 1.5rem; }
+  .socialMediaSeparation {
+    margin-bottom: 9%; }
+  .whatsapp {
+    right: 1rem;
+    bottom: 1rem; }
+  .whatsapp img {
+    height: 3rem; } }
+
+/* ..............................................Main del Index para Laptop 769px a 1200px.............................................. */
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .imagenDeFondo {
+    height: 60rem; }
+  .tituloArriba {
+    font-size: 2.5rem; }
+  .parrafoAbajo {
+    font-size: 1.5rem; } }
+
+/* ..............................................Propiedades compartidas del sitio web para Laptop 769px a 1200px.............................................. */
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .tituloPrincipal {
+    font-size: 2.8rem; } }
+
+/* ..............................................About para Laptop 769px a 1200px.............................................. */
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .imgAbout {
+    flex-direction: column; } }
+
+/* ..............................................Galeria para Laptop 769px a 1200px.............................................. */
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .containerGallery img {
+    height: 16rem; } }
+
+/* ..............................................Contacto para Laptop 769px a 1200px.............................................. */
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .containerForm {
+    font-size: 1.4rem; }
+  .formDatosPersonales {
+    height: 1.4rem;
+    width: 17rem; } }

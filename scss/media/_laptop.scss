@@ -1,0 +1,91 @@
+/* ..............................................Header Sticky para Laptop 769px a 1024px.............................................. */
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .titleLogo {
+        left: 4rem;
+        top: 0.5rem;
+        font-size: 2.3rem;
+    }
+    .favicon {
+        height: 3.8rem;
+    }
+    .indexLinksStyle {
+        font-size: 0.8rem;
+    }
+    .indexLinksUbication2 {
+        row-gap: 0.8rem;
+    }
+}
+
+/* ..............................................Footer para Laptop 769px a 1024px.............................................. */
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .endMediaLinks {
+        font-size: 0.8rem;
+        border-bottom: solid 0.14rem;
+        border-left: solid 0.14rem;
+    }
+    .mediaLogo {
+        height: 1.5rem;
+    }
+    .socialMediaSeparation {
+        margin-bottom: 9%;
+    }
+    .whatsapp {
+        right: 1rem;
+        bottom: 1rem;
+    }
+    .whatsapp img {
+        height: 3rem;
+    }
+}
+
+/* ..............................................Main del Index para Laptop 769px a 1200px.............................................. */
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+    .imagenDeFondo {
+        height: 60rem;
+    }
+    .tituloArriba {
+        font-size: 2.5rem;
+    }
+    .parrafoAbajo {
+        font-size: 1.5rem;
+    }
+}
+
+/* ..............................................Propiedades compartidas del sitio web para Laptop 769px a 1200px.............................................. */
+
+@media only screen and (min-width: 769px) and (max-width: 1200px){
+    .tituloPrincipal {
+        font-size: 2.8rem;
+    }
+}
+
+/* ..............................................About para Laptop 769px a 1200px.............................................. */
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+    .imgAbout {
+        flex-direction: column;
+    }
+}
+
+/* ..............................................Galeria para Laptop 769px a 1200px.............................................. */
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+    .containerGallery img {
+        height: 16rem;
+    }
+}
+
+/* ..............................................Contacto para Laptop 769px a 1200px.............................................. */
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+    .containerForm {
+        font-size: 1.4rem;
+    }
+    .formDatosPersonales {
+        height: 1.4rem;
+        width: 17rem;
+    }
+}

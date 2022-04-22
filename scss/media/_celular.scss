@@ -1,0 +1,126 @@
+/* ..............................................Header Sticky para Celular 320px a 480px.............................................. */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .titleLogo {
+        display: none;
+    }
+    .navBar {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: "Logo Navegacion"; 
+    }
+    .favicon {
+        height: 3rem;
+    }
+    .indexLinksStyle {
+        font-size: 0.6rem;
+    }
+    .indexLinksUbication2 {
+        row-gap: 0.5rem;
+    }
+}
+
+/* ..............................................Footer para Celular 320px a 480px.............................................. */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .endBar {
+        height: 15rem;
+    }
+    .endMediaLinks {
+        font-size: 0.6rem;
+        border-bottom: solid 0.14rem;
+        border-left: solid 0.14rem;
+    }
+    .mediaLogo {
+        display: none;
+    }
+    .socialMediaSeparation {
+        margin-top: 9%;
+        margin-bottom: 20%;
+    }
+    .utilesBar {
+        margin: 9%;
+    }
+    .whatsapp {
+        right: 1rem;
+        bottom: 1rem;
+    }
+    .whatsapp img {
+        height: 2.8rem;
+    }
+}
+
+/* ..............................................Main del Index para Celular 320px a 480px.............................................. */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .imagenDeFondo {
+        height: 33rem;
+    }
+    .tituloArriba {
+        font-size: 1.1rem;
+    }
+    .parrafoAbajo {
+        font-size: 0.7rem;
+    }
+}
+
+/* ..............................................Propiedades compartidas del sitio web para Celular 320px a 480px.............................................. */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .tituloPrincipal {
+        font-size: 1.1rem;
+    }
+}
+
+/* ..............................................About para Celulares 320px a 480px.............................................. */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .gridAbout {
+        grid-template-columns: 1fr;
+        grid-template-rows: fit-content fit-content;
+        grid-template-areas: 
+            "Titulo"
+            "Fotos"
+            "Parrafo";
+        justify-content: center;
+    }
+    .imgAbout img {
+        height: 5rem;
+        width: 7rem;
+        margin: 0.5rem;
+    }
+    .textAbout {
+        font-size: 0.7rem;
+        text-align: center;
+    }
+}
+
+/* ..............................................Galeria para Celulares 320px a 480px.............................................. */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .containerGallery {
+        flex-direction: column;
+        align-items: center;
+    }
+    .containerGallery img {
+        height: 11rem;
+    }
+}
+
+/* ..............................................Contacto para Celulares 320px a 480px.............................................. */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .containerForm {
+        font-size: 0.7rem;
+    }
+    .form {
+        width: 90%;
+    }
+    .formDatosPersonales {
+        height: 0.7rem;
+        width: 12rem;
+    }
+    .formComentario {
+        width: 90%;
+    }
+}

@@ -1,0 +1,109 @@
+/* ..............................................Header Sticky para Tablet 481px a 768px.............................................. */
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .titleLogo {
+        display: none;
+    }
+    .navBar {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        grid-template-areas: "Logo Navegacion"; 
+    }
+    .favicon {
+        height: 4rem;
+    }
+    .indexLinksStyle {
+        font-size: 0.7rem;
+    }
+    .indexLinksUbication2 {
+        row-gap: 0.7rem;
+    }
+}
+
+/* ..............................................Footer para Tablet 481px a 768px.............................................. */
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .endBar {
+        height: 13rem;
+    }
+    .endMediaLinks {
+        font-size: 0.9rem;
+        border-bottom: solid 0.14rem;
+        border-left: solid 0.14rem;
+    }
+    .mediaLogo {
+        display: none;
+    }
+    .socialMediaSeparation {
+        margin-top: 9%;
+    }
+    .whatsapp {
+        right: 1rem;
+        bottom: 1rem;
+    }
+    .whatsapp img {
+        height: 2.8rem;
+    }
+}
+
+/* ..............................................Main del Index para Tablet 481px a 768px.............................................. */
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .imagenDeFondo {
+        height: 50rem;
+    }
+    .tituloArriba {
+        font-size: 2rem;
+    }
+    .parrafoAbajo {
+        font-size: 1.1rem;
+    }
+}
+
+/* ..............................................Propiedades compartidas del sitio web para Tablet 481px a 768px.............................................. */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .tituloPrincipal {
+        font-size: 2rem;
+    }
+}
+
+/* ..............................................About para Tablet 481px a 768px.............................................. */
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .imgAbout img{
+        height: 7rem;
+        width: 10rem;
+    }
+    .imgAbout {
+        flex-direction: column;
+    }
+    .textAbout {
+        font-size: 1.1rem;
+    }
+}
+
+/* ..............................................Geleria para Tablet 481px a 768px.............................................. */
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .containerGallery img {
+        height: 13rem;
+    }
+}
+
+/* ..............................................Contacto para Tablet 481px a 768px.............................................. */
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .containerForm {
+        font-size: 1.1rem;
+    }
+    .form {
+        width: 80%;
+    }
+    .formDatosPersonales {
+        height: 1.1rem;
+        width: 14rem;
+    }
+    .formComentario {
+        width: 85%;
+    }
+}

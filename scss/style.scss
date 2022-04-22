@@ -1,0 +1,340 @@
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    font-size: 62.5%;
+}
+
+@import "variables";
+
+/* ..............................................Header Sticky para Desktop 1200px en adelante.............................................. */
+.navBar {
+    background-image: linear-gradient(to bottom, 
+        map-get($colores--header--footer,primario),
+        map-get($colores--header--footer,secundario),
+        map-get($colores--header--footer,terciario),
+        map-get($colores--header--footer,cuaternario)
+    );
+    margin:0;
+    position: relative;
+    position: sticky;
+    top:0;
+    z-index: 4;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "Logo Navegacion";
+    .container-fluid {
+        justify-content: flex-end;
+    }
+}
+
+.indexLinks {
+    margin-right: 1rem;
+    list-style: none; 
+}
+
+.indexLinks:hover {
+    transform: scale(1.2,1.2);
+}
+
+.indexLinksStyle {
+    color: $color--enlaces--header--footer;
+    text-decoration: none;
+    border-top: solid 0.1rem;
+    border-right: solid 0.1rem;
+    padding: 0.2rem;
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position:relative;
+}
+
+.indexLinksStyle:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 0.1rem;
+    width: 100%;
+    background-color: black;
+
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.indexLinksStyle:hover:after {
+    transform-origin: right;
+    transform: scaleX(1);
+}
+
+.indexLinksUbication1 {
+    grid-area: Navegacion;
+    display:flex;
+    align-items: flex-end;
+}
+
+.indexLinksUbication2 {
+    width: 100%;
+    display:flex;
+    align-items: flex-end;
+    justify-content: right;
+}
+
+.titleLogo {
+    color: $color--enlaces--header--footer;
+    position: absolute;
+    left: 5rem;
+    top: 1rem;
+    font-size: 2.5rem;
+}
+
+.favicon {
+    height: 5rem;
+}
+
+/* ..............................................Footer para Desktop 1200px en adelante.............................................. */
+.endBar {
+    background-image: linear-gradient(to top, 
+        map-get($colores--header--footer,primario),
+        map-get($colores--header--footer,secundario),
+        map-get($colores--header--footer,terciario),
+        map-get($colores--header--footer,cuaternario)
+    );
+    height: 20rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "Social Utiles none"; 
+}
+
+.socialMediaSeparation {
+    grid-area: Social;
+    margin: 3%;
+    width: fit-content;
+}
+
+.endMediaLinks{
+    color: $color--enlaces--header--footer;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-bottom: solid 0.2rem;
+    border-left: solid 0.2rem;
+    font-family: $fuente
+}
+
+.socialMediaSeparation:hover {
+    transform: scale(1.05,1.05);
+}
+
+.utilesBar:hover {
+    transform: scale(1.05,1.05);
+}
+
+.utilesBar {
+    grid-area: Utiles;
+    margin: 3%;
+    width: fit-content;
+    height: fit-content;
+    justify-self: center;
+    font-family: $fuente;
+}
+
+.mediaLogo{
+    height: 2rem;
+    vertical-align: text-bottom;
+}
+
+.whatsapp {
+    position:fixed;
+    right: 2rem;
+    bottom: 2rem;
+    border: none;
+}
+
+.whatsapp img {
+    height: 4rem;
+}
+
+/* ..............................................Main del Index para Desktop 1200px en adelante.............................................. */
+
+.imagenDeFondo {
+    background-image: url("../img/logo-g2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100rem;
+    width: auto;
+    background-position-x: center;
+    background-position-y: center;
+    position: relative;
+    display: grid;
+    grid-template-columns: 33.3%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    grid-template-areas: 
+        "Titulo"
+        "none"
+        "Parrafo";
+    justify-content: center;
+    justify-items: center;
+}
+
+@keyframes aparecer {
+    0%,40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.tituloArriba {
+    grid-area: Titulo;
+    align-self: end;
+    font-size: 4rem;
+    color: $color--texto;
+    font-family: $fuente;
+    text-align: center;
+    animation-name: aparecer;
+    animation-duration: 2s;
+    animation-iteration-count: 1s;
+}
+
+.parrafoAbajo {
+    grid-area: Parrafo;
+    font-size: 2.5rem;
+    color: $color--texto;
+    font-family: $fuente;
+    text-align: center;
+    animation-name: aparecer;
+    animation-duration: 2s;
+    animation-iteration-count: 1s;
+}
+
+/* ..............................................Propiedades compartidas del sitio web para Desktop 1200px en adelante.............................................. */
+.tituloPrincipal {
+    color: $color--texto;
+    font-size: 4rem;
+    font-family: $fuente;
+    text-align: left;
+    margin-left: 2rem;
+    text-decoration: underline;
+}
+
+.fondo {
+    background-image: radial-gradient(map-get($colores--fondo,primario) 50%, map-get($colores--fondo,secundario));
+    position:relative;
+}
+
+/* ..............................................About para Desktop 1200px en adelante.............................................. */
+.gridAbout {
+    display: grid;
+    grid-template-columns: 1fr 1.8fr;
+    grid-template-rows: fit-content fit-content;
+    grid-template-areas: 
+        "Titulo Titulo"
+        "Fotos Parrafo";
+    align-items: center;
+    justify-items: center;
+}
+
+.titleGridAbout {
+    grid-area: Titulo;
+    justify-self: left;
+}
+
+.imgAbout {
+    grid-area: Fotos;
+    display: flex;
+}
+
+.imgAbout img{
+    height: 10rem;
+    width: 15rem;
+    margin: 1rem;
+}
+
+.textAbout {
+    grid-area: Parrafo;
+    font-size: 1.4rem;
+    color: $color--texto;
+    margin: 5%;
+}
+
+/* ..............................................Galeria para Desktop 1200px en adelante.............................................. */
+.containerGallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2%;
+}
+
+.containerGallery img {
+    height: 25rem;
+    margin: 0.4%;
+}
+
+.containerGallery img:hover {
+    transform: scale(1.2,1.2)
+}
+
+/* ..............................................Servicios para Desktop 1200px en adelante.............................................. */
+.servicios {
+    border: solid 0.4rem map-get($colores--card,borde);
+    background-color: map-get($colores--card,fondo);
+}
+
+.row {
+    justify-content: center;
+    padding:1%;
+}
+
+.card-title {
+    font-family: $fuente;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-decoration: underline;
+    color: $color--texto;
+}
+
+/* ..............................................Contacto para Desktop 1200px en adelante.............................................. */
+.containerForm {
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formCentrarConFlex{
+    display: flex;
+    align-items: center;
+}
+
+.form {
+    padding: 1%;
+    margin: 2%;
+    width: 65%;
+}
+
+.formDatosPersonales {
+    height: 1.6rem;
+    width: 20rem;
+    margin-left: 0.3rem;
+}
+
+.containerComentario {
+    text-align: center;
+}
+
+.formComentario {
+    width: 75%;
+}
+
+.centrado {
+    margin: 0 auto;
+}
+
+/* ..............................................imports para las media queries.............................................. */
+@import "media/celular";
+@import "media/tablet";
+@import "media/laptop";
