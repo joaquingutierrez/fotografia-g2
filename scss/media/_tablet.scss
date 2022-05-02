@@ -1,3 +1,5 @@
+@import "../mixins";
+
 /* ..............................................Header Sticky para Tablet 481px a 768px.............................................. */
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -56,7 +58,7 @@
         font-size: 2rem;
     }
     .parrafoAbajo {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 }
 
@@ -71,8 +73,7 @@
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     .imgAbout img{
-        height: 7rem;
-        width: 10rem;
+        @include sizes (10rem, 7rem);
     }
     .imgAbout {
         flex-direction: column;
@@ -90,6 +91,19 @@
     }
 }
 
+/* ..............................................Servicios para Tablet 481px a 768px.............................................. */
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .servicios {
+        padding: 1%;
+        font-size: 1.2rem;
+        width: 16rem;
+    }
+    .imgServicios {
+        @include sizes (11rem, 7rem);
+    }
+}
+
 /* ..............................................Contacto para Tablet 481px a 768px.............................................. */
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -100,8 +114,7 @@
         width: 80%;
     }
     .formDatosPersonales {
-        height: 1.1rem;
-        width: 14rem;
+        @include sizes (14rem, 1.1rem);
     }
     .formComentario {
         width: 85%;

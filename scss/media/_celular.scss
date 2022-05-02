@@ -1,3 +1,5 @@
+@import "../mixins";
+
 /* ..............................................Header Sticky para Celular 320px a 480px.............................................. */
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -60,7 +62,7 @@
         font-size: 1.1rem;
     }
     .parrafoAbajo {
-        font-size: 0.7rem;
+        font-size: 0.5rem;
     }
 }
 
@@ -107,19 +109,34 @@
     }
 }
 
+/* ..............................................Servicios para Celulares 320px a 480px.............................................. */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .servicios {
+        padding: 2%;
+        font-size: 0.8rem;
+        width: 15rem;
+    }
+    .imgServicios {
+        @include sizes (10rem, 5rem);
+    }
+}
+
 /* ..............................................Contacto para Celulares 320px a 480px.............................................. */
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
     .containerForm {
         font-size: 0.7rem;
     }
+
     .form {
         width: 90%;
     }
+
     .formDatosPersonales {
-        height: 0.7rem;
-        width: 12rem;
+        @include sizes (12rem, 0.7rem);
     }
+
     .formComentario {
         width: 90%;
     }

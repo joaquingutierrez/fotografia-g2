@@ -1,0 +1,52 @@
+Keywords agregadas
+
+index:
+	Fotógrafos, Fotografía, Profesionales, Fotografía profesional, Fotos, Mar del Plata
+
+about-us:
+	Fotógrafos, Fotografía, Profesionales, Fotografía profesional, Fotos, Mar del Plata, Sobre nosotros
+
+contact:
+	Fotógrafos, Fotografía, Profesionales, Fotografía profesional, Fotos, Mar del Plata, Contacto
+
+gallery:
+	Fotógrafos, Fotografía, Profesionales, Fotografía profesional, Fotos, Mar del Plata, Galería
+
+services:
+	Fotógrafos, Fotografía, Profesionales, Fotografía profesional, Fotos, Mar del Plata, Servicios, Casamientos, Bautismos, Cumpleaños, Comuniones, Fotografía publicitaria, Publicidad
+
+
+Descripciones agregadas:
+
+index:
+	Somos dos personas que realiamos fotografía profesional para diversos eventos o fines, contamos con una amplia experiencia en el sector.
+
+about-us:
+	Somos dos personas que realiamos fotografía profesional para diversos eventos o fines, contamos con una amplia experiencia en el sector. En esta sección encontrarán información sobre nosotros.
+
+contact:
+	Somos dos personas que realiamos fotografía profesional para diversos eventos o fines, contamos con una amplia experiencia en el sector. En esta sección podrán escribirnos un mensaje con su consulta.
+
+gallery:
+	Somos dos personas que realiamos fotografía profesional para diversos eventos o fines, contamos con una amplia experiencia en el sector. En esta sección encontrarán alguas de nuestras fotos de muestra.
+
+services:
+	Somos dos personas que realiamos fotografía profesional para diversos eventos o fines, contamos con una amplia experiencia en el sector. En esta sección encontrarán los diferentes servicios que ofrecemos.
+
+
+Cambios a las etiquetas title:
+
+index:
+	G2 Fotografía (queda igual)
+
+about-us:
+	Quiénes somos ......> G2 Fotografía | Quiénes somos
+
+contact:
+	Contacto ......> G2 Fotografía | Contacto
+
+gallery:
+	Galería ......> G2 Fotografía | Galería
+
+services:
+	Servicios ......> G2 Fotografía | Servicios

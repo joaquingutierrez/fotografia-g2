@@ -1,3 +1,5 @@
+@import "../mixins";
+
 /* ..............................................Header Sticky para Laptop 769px a 1024px.............................................. */
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -50,7 +52,7 @@
         font-size: 2.5rem;
     }
     .parrafoAbajo {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -78,6 +80,21 @@
     }
 }
 
+/* ..............................................Servicios para Laptop 769px a 1200px.............................................. */
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+    .containerServices {
+        padding: 0%;
+    }
+    .servicios {
+        font-size: 1.4rem;
+        width: 22rem;
+    }
+    .imgServicios {
+        @include sizes (17rem, 12rem);
+    }
+}
+
 /* ..............................................Contacto para Laptop 769px a 1200px.............................................. */
 
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
@@ -85,7 +102,6 @@
         font-size: 1.4rem;
     }
     .formDatosPersonales {
-        height: 1.4rem;
-        width: 17rem;
+        @include sizes (17rem, 1.4rem);
     }
 }

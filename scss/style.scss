@@ -7,8 +7,10 @@ body {
 }
 
 @import "variables";
+@import "mixins";
 
 /* ..............................................Header Sticky para Desktop 1200px en adelante.............................................. */
+
 .navBar {
     background-image: linear-gradient(to bottom, 
         map-get($colores--header--footer,primario),
@@ -32,11 +34,10 @@ body {
 
 .indexLinks {
     margin-right: 1rem;
-    list-style: none; 
-}
-
-.indexLinks:hover {
-    transform: scale(1.2,1.2);
+    list-style: none;
+    &:hover {
+        transform: scale(1.2,1.2);
+    }
 }
 
 .indexLinksStyle {
@@ -48,25 +49,23 @@ body {
     font-size: 1rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position:relative;
-}
-
-.indexLinksStyle:after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    height: 0.1rem;
-    width: 100%;
-    background-color: black;
-
-    transform-origin: left;
-    transform: scaleX(0);
-    transition: transform 0.2s ease-in-out;
-}
-
-.indexLinksStyle:hover:after {
-    transform-origin: right;
-    transform: scaleX(1);
+    &:after{
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 0.1rem;
+        width: 100%;
+        background-color: black;
+    
+        transform-origin: left;
+        transform: scaleX(0);
+        transition: transform 0.2s ease-in-out;
+    }
+    &:hover:after{
+        transform-origin: right;
+        transform: scaleX(1);
+    }
 }
 
 .indexLinksUbication1 {
@@ -91,10 +90,11 @@ body {
 }
 
 .favicon {
-    height: 5rem;
+    @include sizes(auto, 5rem);
 }
 
 /* ..............................................Footer para Desktop 1200px en adelante.............................................. */
+
 .endBar {
     background-image: linear-gradient(to top, 
         map-get($colores--header--footer,primario),
@@ -109,10 +109,17 @@ body {
     grid-template-areas: "Social Utiles none"; 
 }
 
-.socialMediaSeparation {
-    grid-area: Social;
+.redesSociales {
     margin: 3%;
     width: fit-content;
+    &:hover {
+        transform: scale(1.05,1.05);
+    }
+}
+
+.socialMediaSeparation {
+    grid-area: Social;
+    @extend .redesSociales;
 }
 
 .endMediaLinks{
@@ -124,21 +131,12 @@ body {
     font-family: $fuente
 }
 
-.socialMediaSeparation:hover {
-    transform: scale(1.05,1.05);
-}
-
-.utilesBar:hover {
-    transform: scale(1.05,1.05);
-}
-
 .utilesBar {
     grid-area: Utiles;
-    margin: 3%;
-    width: fit-content;
     height: fit-content;
     justify-self: center;
     font-family: $fuente;
+    @extend .redesSociales
 }
 
 .mediaLogo{
@@ -151,10 +149,9 @@ body {
     right: 2rem;
     bottom: 2rem;
     border: none;
-}
-
-.whatsapp img {
-    height: 4rem;
+        img {
+            height: 4rem;
+        }
 }
 
 /* ..............................................Main del Index para Desktop 1200px en adelante.............................................. */
@@ -202,7 +199,7 @@ body {
 
 .parrafoAbajo {
     grid-area: Parrafo;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     color: $color--texto;
     font-family: $fuente;
     text-align: center;
@@ -212,6 +209,7 @@ body {
 }
 
 /* ..............................................Propiedades compartidas del sitio web para Desktop 1200px en adelante.............................................. */
+
 .tituloPrincipal {
     color: $color--texto;
     font-size: 4rem;
@@ -227,6 +225,7 @@ body {
 }
 
 /* ..............................................About para Desktop 1200px en adelante.............................................. */
+
 .gridAbout {
     display: grid;
     grid-template-columns: 1fr 1.8fr;
@@ -246,12 +245,10 @@ body {
 .imgAbout {
     grid-area: Fotos;
     display: flex;
-}
-
-.imgAbout img{
-    height: 10rem;
-    width: 15rem;
-    margin: 1rem;
+        img {
+            @include sizes(15rem, 10rem);
+            margin: 1rem;
+        }
 }
 
 .textAbout {
@@ -262,42 +259,53 @@ body {
 }
 
 /* ..............................................Galeria para Desktop 1200px en adelante.............................................. */
+
 .containerGallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 2%;
-}
-
-.containerGallery img {
-    height: 25rem;
-    margin: 0.4%;
-}
-
-.containerGallery img:hover {
-    transform: scale(1.2,1.2)
+        img {
+            height: 25rem;
+            margin: 0.4%;
+            &:hover {
+                transform: scale(1.2,1.2)
+            }
+        }
 }
 
 /* ..............................................Servicios para Desktop 1200px en adelante.............................................. */
+
+.containerServices {
+    text-align: center;
+    width: auto;
+    font-size: 1.8rem;
+    padding: 2% 5%;
+}
+
 .servicios {
-    border: solid 0.4rem map-get($colores--card,borde);
-    background-color: map-get($colores--card,fondo);
-}
-
-.row {
-    justify-content: center;
-    padding:1%;
-}
-
-.card-title {
+    display: inline-block;
+    text-align: center;
     font-family: $fuente;
     font-size: 1.5rem;
     font-style: italic;
     text-decoration: underline;
+    border: solid 0.4rem map-get($colores--card,borde);
+    border-radius: 2rem;
+    width: 25rem;
+    padding: 2%;
+    margin: 1%;
+    background-color: map-get($colores--card,fondo);
     color: $color--texto;
 }
 
+.imgServicios {
+    @include sizes(20rem, 15rem);
+    border-radius: 1rem;
+}
+
 /* ..............................................Contacto para Desktop 1200px en adelante.............................................. */
+
 .containerForm {
     font-size: 1.8rem;
     display: flex;
@@ -317,8 +325,7 @@ body {
 }
 
 .formDatosPersonales {
-    height: 1.6rem;
-    width: 20rem;
+    @include sizes(20rem, 1.6rem);
     margin-left: 0.3rem;
 }
 
@@ -335,6 +342,7 @@ body {
 }
 
 /* ..............................................imports para las media queries.............................................. */
+
 @import "media/celular";
 @import "media/tablet";
 @import "media/laptop";
