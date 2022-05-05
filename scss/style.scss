@@ -30,6 +30,7 @@ body {
     .container-fluid {
         justify-content: flex-end;
     }
+    padding-bottom: auto;
 }
 
 .indexLinks {
@@ -47,7 +48,7 @@ body {
     border-right: solid 0.1rem;
     padding: 0.2rem;
     font-size: 1rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: $fuente;
     position:relative;
     &:after{
         content: "";
@@ -311,6 +312,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .formCentrarConFlex{
@@ -340,6 +343,7 @@ body {
 .centrado {
     margin: 0 auto;
 }
+
 
 /* ..............................................imports para las media queries.............................................. */
 

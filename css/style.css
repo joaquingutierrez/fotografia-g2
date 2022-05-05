@@ -16,7 +16,8 @@ body {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "Logo Navegacion"; }
+  grid-template-areas: "Logo Navegacion";
+  padding-bottom: auto; }
   .navBar .container-fluid {
     justify-content: flex-end; }
 
@@ -33,7 +34,7 @@ body {
   border-right: solid 0.1rem;
   padding: 0.2rem;
   font-size: 1rem;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   position: relative; }
   .indexLinksStyle:after {
     content: "";
@@ -244,7 +245,9 @@ body {
   font-size: 1.8rem;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
 
 .formCentrarConFlex {
   display: flex;
@@ -355,15 +358,8 @@ body {
 
 /* ..............................................Contacto para Celulares 320px a 480px.............................................. */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  .containerForm {
-    font-size: 0.7rem; }
-  .form {
-    width: 90%; }
-  .formDatosPersonales {
-    height: 0.7rem;
-    width: 12rem; }
-  .formComentario {
-    width: 90%; } }
+  .form-control {
+    font-size: 0.7rem; } }
 
 /* ..............................................Header Sticky para Tablet 481px a 768px.............................................. */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -439,15 +435,8 @@ body {
 
 /* ..............................................Contacto para Tablet 481px a 768px.............................................. */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  .containerForm {
-    font-size: 1.1rem; }
-  .form {
-    width: 80%; }
-  .formDatosPersonales {
-    height: 1.1rem;
-    width: 14rem; }
-  .formComentario {
-    width: 85%; } }
+  .form-control {
+    font-size: 1.1rem; } }
 
 /* ..............................................Header Sticky para Laptop 769px a 1024px.............................................. */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
