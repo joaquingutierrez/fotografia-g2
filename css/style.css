@@ -201,7 +201,8 @@ body {
   grid-area: Parrafo;
   font-size: 1.4rem;
   color: #944410;
-  margin: 5%; }
+  margin: 5%;
+  text-align: justify; }
 
 /* ..............................................Galeria para Desktop 1200px en adelante.............................................. */
 .containerGallery {
