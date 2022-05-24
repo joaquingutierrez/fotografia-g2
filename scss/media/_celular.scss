@@ -19,6 +19,7 @@
     }
     .indexLinksUbication2 {
         row-gap: 0.5rem;
+        margin-top: 1rem;
     }
 }
 
@@ -41,7 +42,7 @@
         margin-bottom: 20%;
     }
     .utilesBar {
-        margin: 9%;
+        margin-top: 9%;
     }
     .whatsapp {
         right: 1rem;
@@ -107,6 +108,11 @@
     .containerGallery img {
         height: 11rem;
     }
+    .carousel {
+        img {
+            height: 25vh;
+        }
+    }
 }
 
 /* ..............................................Servicios para Celulares 320px a 480px.............................................. */
@@ -127,5 +133,8 @@
 @media only screen and (min-width: 320px) and (max-width: 480px) {
     .form-control {
         font-size: 0.7rem;
+    }
+    .containerForm2 {
+        padding-bottom: 1rem;
     }
 }

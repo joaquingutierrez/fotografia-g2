@@ -19,6 +19,7 @@
     }
     .indexLinksUbication2 {
         row-gap: 0.7rem;
+        margin-top: 1.2rem;
     }
 }
 
@@ -37,6 +38,9 @@
         display: none;
     }
     .socialMediaSeparation {
+        margin-top: 9%;
+    }
+    .utilesBar {
         margin-top: 9%;
     }
     .whatsapp {
@@ -109,5 +113,8 @@
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     .form-control {
         font-size: 1.1rem;
+    }
+    .containerForm2 {
+        padding-bottom: 1rem;
     }
 }

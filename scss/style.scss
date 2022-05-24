@@ -92,6 +92,8 @@ body {
 
 .favicon {
     @include sizes(auto, 5rem);
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 /* ..............................................Footer para Desktop 1200px en adelante.............................................. */
@@ -137,7 +139,7 @@ body {
     height: fit-content;
     justify-self: center;
     font-family: $fuente;
-    @extend .redesSociales
+    @extend .redesSociales;
 }
 
 .mediaLogo{
@@ -266,12 +268,25 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     padding: 2%;
+
         img {
             height: 25rem;
             margin: 0.4%;
+            transition:all 0.7s ease-in-out;
             &:hover {
-                transform: scale(1.2,1.2)
+                transform: scale(1.2,1.2);
             }
+        }
+}
+
+.carousel {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+        img {
+            height: 50vh;
         }
 }
 

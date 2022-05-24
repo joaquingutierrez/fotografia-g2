@@ -71,7 +71,9 @@ body {
 
 .favicon {
   height: 5rem;
-  width: auto; }
+  width: auto;
+  margin-top: auto;
+  margin-bottom: auto; }
 
 /* ..............................................Footer para Desktop 1200px en adelante.............................................. */
 .endBar {
@@ -209,9 +211,19 @@ body {
   padding: 2%; }
   .containerGallery img {
     height: 25rem;
-    margin: 0.4%; }
+    margin: 0.4%;
+    transition: all 0.7s ease-in-out; }
     .containerGallery img:hover {
       transform: scale(1.2, 1.2); }
+
+.carousel {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem; }
+  .carousel img {
+    height: 50vh; }
 
 /* ..............................................Servicios para Desktop 1200px en adelante.............................................. */
 .containerServices {
@@ -286,7 +298,8 @@ body {
   .indexLinksStyle {
     font-size: 0.6rem; }
   .indexLinksUbication2 {
-    row-gap: 0.5rem; } }
+    row-gap: 0.5rem;
+    margin-top: 1rem; } }
 
 /* ..............................................Footer para Celular 320px a 480px.............................................. */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -302,7 +315,7 @@ body {
     margin-top: 9%;
     margin-bottom: 20%; }
   .utilesBar {
-    margin: 9%; }
+    margin-top: 9%; }
   .whatsapp {
     right: 1rem;
     bottom: 1rem; }
@@ -344,7 +357,9 @@ body {
     flex-direction: column;
     align-items: center; }
   .containerGallery img {
-    height: 11rem; } }
+    height: 11rem; }
+  .carousel img {
+    height: 25vh; } }
 
 /* ..............................................Servicios para Celulares 320px a 480px.............................................. */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -359,7 +374,9 @@ body {
 /* ..............................................Contacto para Celulares 320px a 480px.............................................. */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .form-control {
-    font-size: 0.7rem; } }
+    font-size: 0.7rem; }
+  .containerForm2 {
+    padding-bottom: 1rem; } }
 
 /* ..............................................Header Sticky para Tablet 481px a 768px.............................................. */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -374,7 +391,8 @@ body {
   .indexLinksStyle {
     font-size: 0.7rem; }
   .indexLinksUbication2 {
-    row-gap: 0.7rem; } }
+    row-gap: 0.7rem;
+    margin-top: 1.2rem; } }
 
 /* ..............................................Footer para Tablet 481px a 768px.............................................. */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -387,6 +405,8 @@ body {
   .mediaLogo {
     display: none; }
   .socialMediaSeparation {
+    margin-top: 9%; }
+  .utilesBar {
     margin-top: 9%; }
   .whatsapp {
     right: 1rem;
@@ -436,7 +456,9 @@ body {
 /* ..............................................Contacto para Tablet 481px a 768px.............................................. */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .form-control {
-    font-size: 1.1rem; } }
+    font-size: 1.1rem; }
+  .containerForm2 {
+    padding-bottom: 1rem; } }
 
 /* ..............................................Header Sticky para Laptop 769px a 1024px.............................................. */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -460,7 +482,10 @@ body {
   .mediaLogo {
     height: 1.5rem; }
   .socialMediaSeparation {
-    margin-bottom: 9%; }
+    margin-bottom: 9%;
+    margin-top: 6%; }
+  .utilesBar {
+    margin-top: 8%; }
   .whatsapp {
     right: 1rem;
     bottom: 1rem; }
