@@ -1,5 +1,3 @@
 {
-  "rewrite": [
-    { "source": "/contacto", "destination": "./pages/contact.html", "permanent": true }
-  ]
+  "rewrites": [{ "source": "/about", "destination": "./pages/contact.html" }]
 }
