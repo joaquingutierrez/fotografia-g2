@@ -1,3 +1,5 @@
 {
-  "rewrites": [{ "source": "/about", "destination": "./pages/contact.html" }]
+  "redirects": [
+    { "source": "./pages/contact.html", "destination": "/contacto", "permanent": true }
+  ]
 }
